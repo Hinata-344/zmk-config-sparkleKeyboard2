@@ -1,7 +1,7 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: sparkleKeyboard2_left rgbled_adapter
+    shield: sparkleKeyboard2_left
 
   - board: seeeduino_xiao_ble
-    shield: sparkleKeyboard2_right rgbled_adapter
+    shield: sparkleKeyboard2_right
