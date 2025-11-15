@@ -1,0 +1,27 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+ / {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&kp ESC         &kp Q             &kp W               &kp E      &kp R      &kp T      &kp Y               &kp U                &kp I      &kp O      &kp P          &kp BACKSPACE
+&kp TAB         &kp A             &kp S               &kp D      &kp F      &kp G      &kp H               &kp J                &kp K      &kp L      &kp SEMICOLON  &kp ENTER
+&kp LEFT_SHIFT  &kp Z             &kp X               &kp C      &kp V      &kp B      &kp N               &kp M                &kp COMMA  &kp DOT    &kp SLASH      &kp RIGHT_SHIFT
+&kp LANG2       &kp LEFT_CONTROL  &lt 2 LEFT_COMMAND  &kp SPACE  &mo 1      &kp LANG1
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp N5  &kp NUMBER_6  &kp N7     &kp N8     &kp N9            &kp N0             &kp BACKSPACE
+&trans          &trans        &trans          &kp UP_ARROW    &trans           &trans  &trans        &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LEFT_SHIFT  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans        &trans     &trans     &trans            &kp SQT            &kp RIGHT_SHIFT
+&kp LANG2       &kp LEFT_CONTROL  &lt 2 LEFT_COMMAND  &kp SPACE  &mo 0      &kp LANG1
+            >;
+        };
+    };
+};
